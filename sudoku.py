@@ -1,15 +1,3 @@
-board = [
-    [0,3,0,0,0,0,0,0,1],
-    [9,0,7,0,8,0,0,3,0],
-    [0,8,0,2,0,4,6,0,0],
-    [4,0,0,6,0,7,3,1,0],
-    [8,7,0,0,2,0,0,0,9],
-    [0,0,3,1,0,0,0,4,2],
-    [0,1,0,0,0,0,0,8,0],
-    [5,0,2,0,6,0,0,7,0],
-    [0,0,0,3,0,5,4,0,6]
-]
-
 
 def solver(x):
     find = find_empty(x)
@@ -28,6 +16,8 @@ def solver(x):
             # Resets the value if it fails to find a number.
             x[row][col] = 0
     return False
+
+
 
 # Checks if there are dublicate numbers or numbers already plotted at pos.
 def valid(x, num, pos):
@@ -71,9 +61,3 @@ def find_empty(x):
             if x[i][j] == 0:
                 return (i, j)
     return None
-
-print("=======Unsolved========")
-print_board(board)
-solver(board)
-print("========Solved=========")
-print_board(board)
