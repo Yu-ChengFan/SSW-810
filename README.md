@@ -9,3 +9,4 @@ To run the code you will need to install pygame.
 
 ## Description
 Once the code is running you can auto solve the sudoku by pressing the SPACE key, and check your answer by pressing ENTER when filling in the box.
+This project is for educational purpose only. 
